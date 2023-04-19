@@ -156,6 +156,7 @@
 				// -------- Pamiętanie i wyświetlanie w wynikach najlepszego wyniku: --------
 				if (reactionTimeList.length == attempts) {
 					reactionTimeList.splice(1, reactionTimeList.length);
+					reactionTimesSum = reactionTimeAverage;
 				}
 			}
 		}
