@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #FFFFFF;
+	--rules-background-color: none;
+	--rules-border: none;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: Arial, serif;
+    display: block;
+}
+
+#main-header {
+    color: #0B3954;
+    text-align: center;
+}
+
+#app-description {
+    text-align: center;
+}
+
+.panel-header {
+    color: #0B3954;
+}
+
+#rules-button {
+    display: block;
+    margin: 0 auto 0 auto;
+	color: #4040FF;
+    padding: 10px 30px 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid #999999;
+}
+
+#game-rules {
+	margin: 20px 300px 20px 300px;
+    background-color: var(--rules-background-color);
+	border: var(--rules-border);
+	border-radius: 10px;
+}
+
+#game-rules-description {
+	margin: auto;
+    max-width: 440px;
+    min-width: 440px;
+}
+
+#attempts {
+	margin: 20px auto 20px auto;
+	text-align: center;
+}
+
+#input-alert {
+	margin: 5px;
+	color: red;
+	font-style: italic;
+	font-size: 14px;
+}
+
+#game-block {
+    max-width: auto;
+}
+
+#game-field {
+    margin: 20px 300px 20px 300px;
+    background-color: #FFFFE0;
+    text-align: center;
+    border: 1px solid black;
+	border-radius: 10px;
+}
+
+#game-square {
+    border: 2px solid black;
+    background-color: var(--background-color);
+    text-align: center;
+    cursor: pointer;
+    margin: auto;
+    max-width: 200px;
+    max-height: 200px;
+    min-width: 200px;
+    min-height: 200px;
+}
+
+#start-stop-button {
+    display: block;
+    margin: 20px auto 20px auto;
+    padding: 10px 40px 10px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid #999999;
+}
+
+.start-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.stop-button {
+    background-color: #fbc6c2;
+    color: #FF0000;
+}
+
+#statistics-panel {
+    margin: 20px 300px 20px 300px;
+    background-color: #F0E68C;
+    text-align: center;
+    border: 1px solid black;
+	border-radius: 10px;
+}
+
+#statistics-box {
+    margin: 0px auto 20px auto;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+#statistics-box ul {
+    text-align: left;
+}
+
+#statistics-box ul li {
+    font-weight: normal;
+}
+
+@media (max-width: 1100px) {
+  #game-block, #statistics-panel, #game-rules, #attempts {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+
+  #statistics-panel {
+    margin: 0px auto 20px auto;
+    width: 440px;
+  }
+
+  #game-field {
+    margin: 20px auto 20px auto;
+    width: 440px;
+  }
+  
+  #game-rules, #attempts {
+    margin: 20px auto 20px auto;
+    width: 440px;
+  }
+  #game-rules-description {
+	padding: 0 30px 0 30px;
+  }
+}
