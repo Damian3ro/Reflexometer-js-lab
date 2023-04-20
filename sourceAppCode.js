@@ -43,6 +43,8 @@
 	    document.getElementById('start-stop-button').setAttribute('class', 'stop-button');
 	    document.getElementById('statistics-panel').style.display = 'none';
 		document.getElementById('attempts').style.display = 'none';
+		gamesCounter++;
+		document.querySelectorAll('#statistics-box ul li')[4].innerText = `Liczba gier: ${gamesCounter}`;
 	}
 
     function hexColorChange() {
@@ -81,7 +83,7 @@
 
 				p = p.then(() => delay((Math.random() * 10000) + 1))
 					 .then(() => hexColorChange())
-					 .then(() => console.log(i+1))
+					 //.then(() => console.log(i+1))
 					 .then(() => console.log('colorChangeCounter = ' + colorChangeCounter))
 					 .then(() => colorChange = true)
 					 .then(() => colorChangeTime = (new Date()).getTime()/1000);
@@ -129,22 +131,23 @@
 				liList[0].innerText = `Najkrótszy czas reakcji: ${reactionTime.toFixed(3)} s`;
 				liList[1].innerText = `Najdłuższy czas reakcji: ${reactionTime.toFixed(3)} s`;
 				liList[2].innerText = `Średni czas reakcji: ${reactionTime.toFixed(3)} s`;
+				reactionTimesSum = reactionTime;
 
 				reactionTimeList.push(reactionTime);
 				//console.log('Pierwszy czas reakcji dodany');
 				//console.log('Najkrótszy czas reakcji: ' + liList[0].innerText);
 			} else {
 				reactionTimeList.push(reactionTime);
-				for (let i = 0; i < reactionTimeList.length; i++) {
-					reactionTimesSum = reactionTimesSum + reactionTimeList[i];
-				}
+				reactionTimesSum = reactionTimesSum + reactionTime;
 				reactionTimeList.sort(function(a, b) {
 					return a - b;
 				});
 				quickestReactionTime = reactionTimeList[0];
 				longestReactionTime = reactionTimeList[reactionTimeList.length-1];
-				reactionTimeAverage = (reactionTimesSum/(reactionTimeList.length));
+				reactionTimeAverage = reactionTimesSum/reactionTimeList.length;
 				//console.log('reactionTimesSum = ' + reactionTimesSum);
+				//console.log('quickestReactionTime = ' + quickestReactionTime);
+				//console.log('longestReactionTime = ' + longestReactionTime);
 				//console.log('reactionTimeAverage = ' + reactionTimeAverage);
 
 				liList[0].innerText = `Najkrótszy czas reakcji: ${quickestReactionTime.toFixed(3)} s`;
@@ -154,9 +157,9 @@
 				//console.log('Najkrótszy czas reakcji: ' + liList[0].innerText);
 
 				// -------- Pamiętanie i wyświetlanie w wynikach najlepszego wyniku: --------
-				if (reactionTimeList.length == attempts) {
+				if (document.getElementById('start-stop-button').innerHTML == 'Start') {
 					reactionTimeList.splice(1, reactionTimeList.length);
-					reactionTimesSum = reactionTimeAverage;
+					reactionTimesSum = 0;
 				}
 			}
 		}
