@@ -130,7 +130,7 @@
 			if (reactionTimeList.length == 0) {
 				liList[0].innerText = `Najkrótszy czas reakcji: ${reactionTime.toFixed(3)} s`;
 				liList[1].innerText = `Najdłuższy czas reakcji: ${reactionTime.toFixed(3)} s`;
-				liList[2].innerText = `Średni czas reakcji: ${reactionTime.toFixed(3)} s`;
+				liList[2].innerText = `Średni czas reakcji w bieżącej grze: ${reactionTime.toFixed(3)} s`;
 				reactionTimesSum = reactionTime;
 
 				reactionTimeList.push(reactionTime);
@@ -152,7 +152,7 @@
 
 				liList[0].innerText = `Najkrótszy czas reakcji: ${quickestReactionTime.toFixed(3)} s`;
 				liList[1].innerText = `Najdłuższy czas reakcji: ${longestReactionTime.toFixed(3)} s`;
-				liList[2].innerText = `Średni czas reakcji: ${reactionTimeAverage.toFixed(3)} s`;
+				liList[2].innerText = `Średni czas reakcji w bieżącej grze: ${reactionTimeAverage.toFixed(3)} s`;
 
 				//console.log('Najkrótszy czas reakcji: ' + liList[0].innerText);
 
