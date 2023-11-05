@@ -2,7 +2,7 @@
 # Reflexometer / Refleksomierzacz
 
 **EN**
-> ### Reflexometer - a browser-based game using JavaScript:
+> ## Reflexometer - a browser-based game using JavaScript:
 >
 > An interactive game that measures the user's reflex. The time between a color change on the screen and the user clicking the mouse is measured.
 >
@@ -21,8 +21,8 @@
 
 
 **PL**
-> ### Refleksomierzacz - gra przeglądarkowa z użyciem JavaScript:
-
+> ## Refleksomierzacz - gra przeglądarkowa z użyciem JavaScript:
+>
 > Interaktywna gra, która mierzy refleks użytkownika. Mierzony jest czas pomiędzy zmianą koloru na ekranie, a kliknięciem myszy przez użytkownika.
 >
 > Gra dostępna jest pod adresem: [Refleksomierzacz](https://damian3ro.github.io/js-lab/)
