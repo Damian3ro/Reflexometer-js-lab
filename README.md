@@ -6,7 +6,7 @@
 >
 > An interactive game that measures the user's reflex. The time between a color change on the screen and the user clicking the mouse is measured.
 >
-> The game is available at: [Reflexometer](https://damian3ro.github.io/js-lab/)
+> The game is available at: [Reflexometer](https://damian3ro.github.io/Reflexometer-js-lab/)
 
 > **Game rules:**
 > 1. Set the number of color changes during the game.
@@ -25,7 +25,7 @@
 >
 > Interaktywna gra, która mierzy refleks użytkownika. Mierzony jest czas pomiędzy zmianą koloru na ekranie, a kliknięciem myszy przez użytkownika.
 >
-> Gra dostępna jest pod adresem: [Refleksomierzacz](https://damian3ro.github.io/js-lab/)
+> Gra dostępna jest pod adresem: [Refleksomierzacz](https://damian3ro.github.io/Reflexometer-js-lab/)
 
 > **Zasady gry:**
 > 1. Ustal liczbę zmian koloru podczas gry.
