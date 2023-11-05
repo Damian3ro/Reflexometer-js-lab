@@ -16,5 +16,4 @@ Gra dostępna jest pod adresem: [Refleksomierzacz](https://damian3ro.github.io/j
 
 *Dodatkowe info:*
 - W każdym momencie możesz zatrzymać grę naciskając przycisk "**Stop**".
-
 - Zamiast kliknięcia, możesz użyć klawisz "**A**" :)
